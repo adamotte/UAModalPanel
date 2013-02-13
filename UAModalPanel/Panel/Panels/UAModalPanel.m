@@ -24,6 +24,7 @@
 @synthesize roundedRect, closeButton, actionButton, delegate, contentView, contentContainer;
 @synthesize margin, padding, cornerRadius, borderWidth, borderColor, contentColor, shouldBounce;
 @synthesize onClosePressed, onActionPressed;
+@synthesize startEndPoint;
 
 
 - (id)initWithFrame:(CGRect)frame {
