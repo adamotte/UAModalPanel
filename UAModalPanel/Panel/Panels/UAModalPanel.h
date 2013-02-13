@@ -40,8 +40,6 @@ typedef void (^UAModalDisplayPanelAnimationComplete)(BOOL finished);
 	UIButton		*actionButton;
 	UIView			*contentView;
 	
-	CGPoint			startEndPoint;
-	
 	UIEdgeInsets	margin;
 	UIEdgeInsets	padding;
 	
@@ -75,6 +73,8 @@ typedef void (^UAModalDisplayPanelAnimationComplete)(BOOL finished);
 @property (nonatomic, retain) UIColor		*contentColor;
 // Shows the bounce animation. Default = YES
 @property (nonatomic, assign) BOOL			shouldBounce;
+
+@property (nonatomic, assign) CGPoint startEndPoint;
 
 @property (readwrite, copy)	UAModalDisplayPanelEvent onClosePressed;
 @property (readwrite, copy)	UAModalDisplayPanelEvent onActionPressed;
